@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --colorStandar:rgb(68, 68, 80);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: gold;
+    font-size: 3em;
+    font-family: 'Poppins', cursive;
+    text-align: center;
+    position:absolute;
+    top :30px;
+    width: 100%;
+
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 100%;
+}
+
+nav {
+    background-color: var(--colorStandar);
+    margin-top: -5px;
+    position: sticky;
+    top: 0px;
+}
+
+video {
+    width: 30%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align:left;
+}
+
+section h3 {
+    text-align: center;
+    margin-top: 18px;
+}
+
+nav p a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav p a:hover {
+    color: gold;
+    text-decoration: solid;
+}
+
+.standarWidth {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.standarWidth > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2vw;
+}
+
+.standarWidth > div > p {
+    font-size: 16px;
+}
+
+.fotos-y-textos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jugadores > div {
+    display:flex;
+    justify-content: space-between;
+}
+
+.jugadores > div > img {
+    width : 23%;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+#active {
+    color: gold;
+}
+
+#seccion2 {
+    background-color: var(--colorStandar);
+    color: white;
+    margin-bottom: 40px;
+}
+
+#seccion3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seccion3 ol {
+    margin-left: 20px;
+}
+
+#seccion2jugadores img {
+    height : 50%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.jugadores ol {
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+    margin-left: 350px;
+
+}
+
+footer {
+    background-color: var(--colorStandar);
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer > div > div {
+    width: 15%;
+}
+
+#logos-redes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 50%;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1110px) {
+    #seccion2 .fotos-y-textos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #seccion2 > div > div > h2  {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #seccion2 > div > div > p  {
+        margin-bottom: 20px;
+    }
+
+    #seccion2jugadores img {
+        height : 50%;
+        margin : 10px 0 0 0;
+    }
+
+    .jugadores ol {
+        padding: 0 0 80px 0;
+        margin : auto;
+    
+    }
+
+}
+
+@media (max-width: 767px) {
+    h1 {
+        position: static;
+        background-color: var(--colorStandar);
+        margin: 0;
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .standarWidth > div > p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    nav p a {
+        font-size: 16px;
+    }
+
+    .fotos-y-textos {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    section div img {
+        width: 60%;
+        align-items: center;
+    }
+
+    #votaciones {
+        margin-top: 20px;
+        width: 35%;
+    }
+}
+
+@media (max-width: 440px) {
+    h1 {
+        font-size: 4vw;
+    }
+
+    #seccion2 > div > div > h2  {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }    
+}
